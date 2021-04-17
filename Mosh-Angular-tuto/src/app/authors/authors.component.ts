@@ -8,11 +8,19 @@ import { AuthorsService } from '../authors.service';
 })
 export class AuthorsComponent implements OnInit {
   authors;
-  constructor(service:AuthorsService) { 
+  constructor(service: AuthorsService) {
     this.authors = service.getAuthors();
   }
 
   ngOnInit(): void {
   }
 
+  OnButtonClick($event : MouseEvent) {
+    $event.stopPropagation();
+    console.log("button clicked ");
+  }
+  OndivClick($event: MouseEvent){
+
+    console.log("Div clicked !");
+  }
 }

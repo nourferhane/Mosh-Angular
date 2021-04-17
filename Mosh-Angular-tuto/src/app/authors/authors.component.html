@@ -1,4 +1,8 @@
 <h2>{{authors.length }}</h2>
+
+<div (click)="OndivClick($event)">
 <ul>
     <li *ngFor ="let author of authors">{{author}}</li>
+    <button class="btn btn-primary" (click)="OnButtonClick($event)">Save</button>
 </ul>
+</div>
