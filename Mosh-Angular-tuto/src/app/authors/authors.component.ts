@@ -15,12 +15,15 @@ export class AuthorsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  OnButtonClick($event : MouseEvent) {
+  OnButtonClick($event: MouseEvent) {
     $event.stopPropagation();
     console.log("button clicked ");
   }
-  OndivClick($event: MouseEvent){
+  OndivClick($event: MouseEvent) {
 
     console.log("Div clicked !");
+  }
+  OnKeyUp() {
+   console.log("Enter clicked")
   }
 }
