@@ -23,7 +23,7 @@ export class AuthorsComponent implements OnInit {
 
     console.log("Div clicked !");
   }
-  OnKeyUp() {
-   console.log("Enter clicked")
+  OnKeyUp(inputText:any) {
+   console.log(inputText)
   }
 }

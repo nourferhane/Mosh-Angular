@@ -4,6 +4,6 @@
 <ul>
     <li *ngFor ="let author of authors">{{author}}</li>
     <button class="btn btn-primary" (click)="OnButtonClick($event)">Save</button>
-    <input type="text" (keyup.enter)= "OnKeyUp()">
+    <input type="text" #inputText (keyup.enter)= "OnKeyUp(inputText.value)">
 </ul>
 </div>
