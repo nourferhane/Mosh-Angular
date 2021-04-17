@@ -14,9 +14,9 @@ import { AuthorsComponent } from './authors/authors.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthorsService
+    
   ],
-  providers: [],
+  providers: [AuthorsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
