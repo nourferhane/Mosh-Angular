@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthorsService } from '../authors.service';
 
 @Component({
   selector: 'app-authors',
@@ -7,10 +6,8 @@ import { AuthorsService } from '../authors.service';
   styleUrls: ['./authors.component.css']
 })
 export class AuthorsComponent implements OnInit {
-  authors;
-  constructor(service: AuthorsService) {
-    this.authors = service.getAuthors();
-  }
+  email :string = "test";
+  text:string="testttitutiugiugiugiuogioug"
 
   ngOnInit(): void {
   }
@@ -23,7 +20,7 @@ export class AuthorsComponent implements OnInit {
 
     console.log("Div clicked !");
   }
-  OnKeyUp(inputText:any) {
-   console.log(inputText)
+  OnKeyUp() {
+   console.log(this.email)
   }
 }
