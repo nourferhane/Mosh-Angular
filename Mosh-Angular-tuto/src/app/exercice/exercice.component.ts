@@ -12,7 +12,7 @@ export class ExerciceComponent   {
 
   OnClick(){
     this.selected = !this.selected;
-    this.change.emit();
+    this.change.emit(this.selected);
   }
 
 }
