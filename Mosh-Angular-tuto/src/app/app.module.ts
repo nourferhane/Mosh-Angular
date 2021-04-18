@@ -9,6 +9,7 @@ import { SummaryPipe } from './summary.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExerciceComponent } from './exercice/exercice.component';
 import { TitleCasePipe } from './title-case.pipe';
+import { PanelComponent } from './panel/panel.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { TitleCasePipe } from './title-case.pipe';
     SummaryPipe,
     ExerciceComponent,
     TitleCasePipe,
+    PanelComponent,
     
   ],
   imports: [

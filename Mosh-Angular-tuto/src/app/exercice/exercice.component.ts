@@ -8,11 +8,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ExerciceComponent   {
   @Input() selected:any ;
   @Output() change = new EventEmitter();
+  
   title="";
 
   OnClick(){
     this.selected = !this.selected;
-    this.change.emit(this.selected);
+    this.change.emit({isSelected :this.selected});
   }
 
 }

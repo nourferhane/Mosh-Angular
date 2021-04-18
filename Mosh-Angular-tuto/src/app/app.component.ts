@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Mosh-Angular-tuto';
- 
- 
-  LogEvent($event:boolean){
-    console.log($event);
+
+
+  LogEvent(event: { isSelected: boolean }) {
+    console.log(event);
+  }
+
+  LogInfo() {
+    console.log("information");
   }
 }
