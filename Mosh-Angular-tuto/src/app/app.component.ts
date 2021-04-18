@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Mosh-Angular-tuto';
+  LogEvent(){
+    console.log("Changed ");
+  }
 }
